@@ -1,0 +1,19 @@
+{
+  "name": "guitarcenter",
+  "version": "1.0.0",
+  "description": "angular project at protek",
+  "main": "server.js",
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-ui-carousel": "^0.1.4",
+    "angular-ui-router": "^0.4.2",
+    "express": "^4.14.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "RashidShamsi",
+  "license": "MIT"
+}

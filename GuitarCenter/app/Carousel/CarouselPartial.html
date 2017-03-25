@@ -1,0 +1,63 @@
+
+  <head>
+<stylesheet src="button.css" />
+  </head>
+  <body>
+
+<div ng-controller="CarouselController">
+      <!--carousel-->     
+  <div class="">
+  
+      <div id="GCcarousel" class="carousel slide">
+            <!-- Indicators -->
+      
+          <!-- Wrapper for slides -->
+        <div align="center" class="carousel-inner">
+        <div class="item" ng-class="{active:!$index}" ng-repeat="slide in slides">
+          <a href="#"><img ng-src="{{slide.imagepath}}"></a>
+        </div>
+                <!-- Controls -->
+           
+
+      </div>
+       <a class="left carousel-control" href="#GCcarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#GCcarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+    </div>
+
+<div align="center" class="carousel-inner" style="padding-top:50px;">
+<div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#desc">Product Information</button>
+  <div id="desc" class="collapse">
+    <div><h1>Product Description</h1> <br> {{slides[currentIndex.slide].productdiscription}}</div>
+    <div><h1>Product Price</h1> <br> {{slides[currentIndex.slide].price}}</div>
+    <div><h1>Product Availability</h1> <br> {{slides[currentIndex.slide].stockavailability }}</div>   
+  </div>
+</div>
+
+<div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#shipping">Shipping Details</button>
+  <div id="shipping" class="collapse">
+    <div><h1>Shipping Details</h1> <br> {{slides[currentIndex.slide].shippingdetails}}</div> 
+  </div>
+</div>
+
+<div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#cust">Customer Reviews</button>
+  <div id="cust" class="collapse">
+    <div><h1>Customer Reviews</h1> <br> {{slides[currentIndex.slide].custmerreviews}}</div> 
+  </div>
+</div>
+</div>
+
+</div>
+<center><a href="#/buyitem"><div ng-click="BuyItem();" class="btn btn-info" >Buy</div></center>
+  
+</div>
+
+
+  </body>
+

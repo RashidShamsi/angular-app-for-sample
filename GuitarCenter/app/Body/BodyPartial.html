@@ -1,0 +1,50 @@
+<stylesheet src="bodystyle.css" />
+
+
+<div ng-controller="BodyController">
+<table>
+	<tr ng-repeat="data in guitarinfo">
+<td>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<div class="thumbnail" >
+					<img src="http://placehold.it/700x350&text=1" class="img-responsive">
+					<div class="caption">
+						<div class="row"><h3>Product Description</h3>
+							{{data.productdiscription}}							
+						</div>
+						<div class="row"><h3>Shipping Details</h3>
+							{{data.shippingdetails}}	
+						</div>
+						<div class="row"><h3>Customer Reviews</h3>
+							{{data.custmerreviews}}
+						</div>
+						<div class="row"><h3>Price</h3>
+							{{data.price}}
+						</div>
+						<div class="row"><h3>Stock Availability</h3>
+							{{data.stockavailability}}
+						</div>
+						<div class="row"><h3>No Of Items</h3>
+							{{data.noofitems}}
+						</div>
+						<div class="row center">
+
+						<div>
+							<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Buy</a>
+    					</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+        </div> 
+
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guitar Center </title>
+</head>
+		<!-- JQuery CDN-->
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>	
+	<!-- bootstrap Latest compiled and minified CSS -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- bootstrap Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+	<!-- Angular Framework CDN-->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-sanitize.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Angular Route-->
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+	<script src="angular-ui-router.js"></script>
+
+	
+
+	<!-- Main CSS Linking-->
+
+	<stylesheet src="Carousel/button.css" />
+	
+
+	<!-- Main Module Linking-->
+	<script src="app.js"></script>
+	
+	<!-- Modules Linking-->
+	<script src="/Header/HeaderModule.js"></script>
+	<script src="/Carousel/CarouselModule.js"></script>
+	<script src="/Body/BodyModule.js"></script>
+	<script src="/buyitem/biModule.js"></script>
+
+	<!-- Services Linking-->
+	<script src="Carousel/CarouselFactory.js"></script>
+
+	<!-- Controllers Linking-->
+	<script src="/Header/HeaderController.js"></script>
+	<script src="/Carousel/CarouselController.js"></script>
+	<script src="/Body/BodyController.js"></script>
+	<script src="/buyitem/biController.js"></script>
+	<!-- Services Linking-->
+	<script src="/Header/HeaderService.js"></script>
+
+<body>
+<div class="wrapper" ng-app="guitarcenter">
+
+<header>
+	
+	<div ng-include="'Header/HeaderPartial.html'"></div>
+
+	<div ui-view></div>
+	<div ng-include="'Footer/Footerpartial.html'"></div>
+
+
+</header>
+
+
+</div>
+
+</body>
+</html>

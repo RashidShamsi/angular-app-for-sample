@@ -1,0 +1,19 @@
+{
+	"mydata": [{
+		"id": 1,
+		"State": "IL",
+		"City": "Chicago"
+	}, {
+		"id": 1,
+		"State": "IL",
+		"City": "Niles"
+	}, {
+		"id": 1,
+		"State": "IL",
+		"City": "Lincolnwood"
+	}, {
+		"id": 1,
+		"State": "IL",
+		"City": "BurrRidge"
+	}]
+}
